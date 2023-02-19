@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Dividir en dos columnas",
+  "description": "Extensión que divide el contenido del elemento con la id #t_body en dos columnas.",
+  "version": "1.0",
+  "action": {
+    "default_title": "Dividir en dos columnas"
+  },
+  "host_permissions": [
+    "*://*.lacuerda.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.lacuerda.net/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
